@@ -26,3 +26,5 @@ section lists all the packages used in the project along with their versions.
 | [react-router-dom](https://reactrouter.com/en/main/start/tutorial#setup)       | 6.21.1  |
 | [dayjs](https://day.js.org/)                                                   | 1.11.10 |
 | [i18next](https://www.i18next.com/)                                            | 23.7.16 |
+
+### Run Project
