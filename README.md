@@ -2,9 +2,17 @@
 
 The "LaoItdev Structure" is a structure for a monorepository project. A monorepository is a repository that contains more than one logical project. These projects can be unrelated, loosely coupled or connected in any other way, but they are all managed in a single repository.
 
+<<<<<<< HEAD
+
 ### Setup Project
 
-The instructions provided under "Setup Project" are typical steps to set up a project from a repository:
+# The instructions provided under "Setup Project" are typical steps to set up a project from a repository:
+
+### Start Project
+
+The instructions provided under "Start Project" are typical steps to set up a project from a repository:
+
+> > > > > > > start project
 
 - Clone project: This is the process of downloading the project from the repository to your local machine.
 - Change repo (**if you have another repo**): This step is optional and is only necessary if you want to use a different repository.
@@ -44,7 +52,7 @@ Here's a breakdown of the command:
 **_Run Project with flag_**
 
 ```bash
-yarn worspace admin dev --mode development
+yarn workspace admin dev --mode development
 ```
 
 - `--mode development`: This is a flag that sets the mode for the script. In this case, it sets the mode of `development``
