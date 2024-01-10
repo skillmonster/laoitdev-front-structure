@@ -2,17 +2,9 @@
 
 The "LaoItdev Structure" is a structure for a monorepository project. A monorepository is a repository that contains more than one logical project. These projects can be unrelated, loosely coupled or connected in any other way, but they are all managed in a single repository.
 
-<<<<<<< HEAD
-
 ### Setup Project
 
 # The instructions provided under "Setup Project" are typical steps to set up a project from a repository:
-
-### Start Project
-
-The instructions provided under "Start Project" are typical steps to set up a project from a repository:
-
-> > > > > > > start project
 
 - Clone project: This is the process of downloading the project from the repository to your local machine.
 - Change repo (**if you have another repo**): This step is optional and is only necessary if you want to use a different repository.
@@ -56,3 +48,46 @@ yarn workspace admin dev --mode development
 ```
 
 - `--mode development`: This is a flag that sets the mode for the script. In this case, it sets the mode of `development``
+
+### Structure
+
+Structure of the `admin` workspace in the monorepo
+
+```bash
+├── src
+│   ├── models
+│   │   ├── **/*.ts
+│   ├── services
+│   │   ├── cache
+│   │   │   ├── **/*.ts
+│   │   ├── https
+│   │   │   ├── **/*.ts
+│   ├── ui
+│   │   ├── components
+│   │   │   ├── **/*
+│   │   │   │   ├── **/*.tsx
+│   │   ├── config
+│   │   │   ├── **/*
+│   │   │   │   ├── **/*.tsx
+│   │   ├── containers
+│   │   │   ├── **/*
+│   │   │   │   ├── **/*.tsx
+│   │   ├── hooks
+│   │   │   ├── **/*
+│   │   │   │   ├── **/*.tsx
+│   │   ├── pages
+│   │   │   ├── **/*
+│   │   │   │   ├── **/*.tsx
+```
+
+- `src`: This is the source directory where all the code for the project lives.
+  - `models`: This directory contains entities and value objects. All the business logic will live in the layer
+- `services`: This directory contains services used across the project.
+  - `cache`: This directory contains TypeScript files (\*.ts) related to caching functionality.
+  - `https`: This directory contains TypeScript files (\*.ts) related to HTTP(S) functionality, likely for making API calls.
+- `ui`: This directory contains all the user interface codes.
+  - `components`: This directory contains directories (\*_/_), each of which contains React component files (\*.tsx).
+  - `config`: This directory contains directories (\*_/_), each of which contains configuration files (\*.tsx).
+  - `containers`: This directory contains directories (\*_/_), each of which contains container component files.
+  - `hooks`: This directory contains directories (\*_/_), each of which contains custom React Hook files (\*.tsx).
+  - `pages`: This directory likely contains the main page components for different routes in the application.
